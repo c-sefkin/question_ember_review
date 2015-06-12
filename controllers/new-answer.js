@@ -6,7 +6,7 @@ Board.NewAnswerController = Ember.ObjectController.extend({
 
       var controller = this;
       answer.get('question').then(function(question) {
-        type.save();
+        question.save();
         controller.transitionToRoute('question', question);
       });
     }
