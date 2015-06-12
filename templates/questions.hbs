@@ -1,0 +1,9 @@
+<h1>The Best Question and Answer Board</h1>
+
+<ul>
+  {{#each question in model}}
+  <li>{{#link-to 'question' question}}{{question.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-question' classNames="btn btn-primary"}}Add a new question{{/link-to}}
