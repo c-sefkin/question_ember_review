@@ -2,7 +2,7 @@
 
 <ul>
   {{#each question in model}}
-  <li>{{#link-to 'question' question}}{{question.title}}{{/link-to}}</li>
+  <li>{{#link-to 'question' question}}{{question.title}}{{/link-to}} By:{{question.author}}</li>
   {{/each}}
 </ul>
 
